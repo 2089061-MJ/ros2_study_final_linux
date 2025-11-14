@@ -15,13 +15,16 @@ Python, PyQt, MySQL을 이용해서 turtle의 cmd_vel(방향), Pose(좌표), res
     $ pip3 install PyQt5
     $ pip3 install PyQt5-tools
     $ pip3 install roslibpy
+### turtlesim을 실행합니다.
+    $ source /opt/ros/humble/setup.bash
+    $ ros2 run turtlesim turtlesim_node
   
 ### 9090번 포트로 ROSBridge 서버를 실행합니다.
     $ ros2 run rosbridge_server rosbridge_websocket -port 9090
 
 ### clone 한 파일 빌드하고 실행하기
     $ colcon build
-    $ source install/local_setup.bash
+    $ source ./install/local_setup.bash
     $ ros2 run test_package controller_node
 
 ## 실행
