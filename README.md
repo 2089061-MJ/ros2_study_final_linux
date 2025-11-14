@@ -19,8 +19,10 @@ Python, PyQt, MySQL을 이용해서 turtle의 cmd_vel(방향), Pose(좌표), res
 ### 9090번 포트로 ROSBridge 서버를 실행합니다.
     $ ros2 run rosbridge_server rosbridge_websocket -port 9090
 
-### clone 한 파일 실행
-    $ python3 controller_node.py
+### clone 한 파일 빌드하고 실행하기
+    $ colcon build
+    $ source install/local_setup.bash
+    $ ros2 run test_package controller_node
 
 ## 실행
 <img width="293" height="268" alt="스크린샷 2025-11-14 102640" src="https://github.com/user-attachments/assets/077cd7a2-bc6f-4325-9baa-0c4197a97d37" />
