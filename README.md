@@ -23,6 +23,8 @@ Python, PyQt, MySQL을 이용해서 turtle의 cmd_vel(방향), Pose(좌표), res
     $ ros2 run rosbridge_server rosbridge_websocket -port 9090
 
 ### clone 한 파일 빌드하고 실행하기
+<img width="730" height="148" alt="image" src="https://github.com/user-attachments/assets/0893c286-b5d7-45f4-aadd-0a51eda09479" />
+
     $ colcon build
     $ source ./install/local_setup.bash
     $ ros2 run test_package controller_node
